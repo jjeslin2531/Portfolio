@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeslin's Portfolio</title>
+
+        <link rel="stylesheet" href="styling.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Oldenburg&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+        <a href="#home">Jeslin Joseph | Portfolio</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <!-- Home section -->
+     <section id="home">
+        <div class="overlay"></div>
+        <h1 class="oldenburg-regular"> Hello, I'm Jeslin! <br> A Software Developer</h1>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h1 class = "delius-swash-caps-regular">Introduction</h1>
+        <div class="about-image">
+            <img id="github-profile-pic" alt="Profile Picture" />
+            <p id="github-bio"></p>
+        </div>
+        <div class="about-content">
+            <div class="about-text oldenburg-regular">
+                <p>
+                    Results-driven software developer with one year of hands-on experience at Cognizant, demonstrating strong capabilities in Java, SQL, and PLSQL database development.
+                    Bachelor's degree in Information Systems from the University of Texas at Arlington, providing a strategic blend of technical proficiency and business process understanding.
+                    Possesses versatile technical skills across multiple programming languages and frameworks including Java, JavaScript, Python, Angular, SpringBoot, HTML, and CSS.
+                    Employs an efficient development workflow through mastery of industry tools such as Git, Eclipse, Tableau, Postman, VS Code, and pgAdmin. Rapidly applies technical knowledge to deliver optimized database solutions that align with business requirements.
+                </p>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="files/java.png" alt="Java">
+                </div>
+                <div class="tech-item">
+                    <img src="files/sql-server.png" alt="SQL">
+                </div>
+                <div class="tech-item">
+                    <img src="files/python.png" alt="Python">
+                </div>
+                <div class="tech-item">
+                    <img src="files/js.png" alt="JavaScript">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+            <h1 class = "delius-swash-caps-regular">Projects</h1>
+        <div class="oldenburg-regular">
+            <a href = "https://github.com/fasttrackd-student-work/spring-assessment-social-media-feb-2025-team-1" target="_blank" >Twitter Clone</a>
+            <p>A RESTful API project that exposes operations for social media data that resembles the conceptual model of Twitter. </p>
+            <a href = "https://github.com/jjeslin2531/IceCream-HTML-Project" target="_blank" >IceCream Store</a>
+            <p>A JavaScript website that implements an IceCream Store.</p>
+            <a href = "https://github.com/fasttrackd-student-work/spring-assignment-quiz-api-jjeslin2531" target="_blank" >Quiz API</a>
+            <p>A small RESTful API that simulates the basic backend functionality for a quiz application.</p>
+        </div>
+    </section>
+
+
+    <!-- Resume section -->
+     <section id="resume">
+        <h1 class = "delius-swash-caps-regular">Resume</h1>
+        <div class="resume-container">
+            <div class="resume-preview resume-content">
+            <object data="files/Jeslin Joseph Resume.pdf" type="application/pdf" width="100%" height="500px">
+                <p>It appears your browser doesn't support embedded PDFs. 
+                <a href="files/Jeslin Joseph Resume.pdf">Click here to view the PDF</a>.</p>
+            </object>
+            </div>
+            <a href="files/Jeslin Joseph Resume.pdf" download class="download-button">Download Resume</a>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+     <section id="contact">
+        <h1 class = "delius-swash-caps-regular">Contact</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    
+     </section>
+     <script src="script.js"> </script>
+</body>
+</html>

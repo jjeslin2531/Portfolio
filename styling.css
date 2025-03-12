@@ -1,0 +1,379 @@
+/* General Reset */
+:root {
+    --color-1: #fcf2f8; 
+    --color-2: #CDD3FB; 
+    --color-3: #FDF6FB; 
+    --color-4: #a8779a; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oldenburg-regular {
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  text-align: center; 
+  padding-top: 90px 0; 
+}
+
+section h1 {
+  font-size: 50px;  
+  font-weight: bold;  
+  padding-top: 50px; 
+}
+
+
+
+body {
+  color: var(--color-2);
+  overflow-x: hidden;
+  background-color: #babce3;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #b0b8e7cc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 3px solid var(--color-1);
+}
+
+.navbar .logo a {
+  font-size: 1.8em;
+  color:var(--color-1); 
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: var(--color-1);
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: var(--color-4); 
+}
+
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger span {
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+}
+
+#home {
+  height: 100vh;
+  background-image: url('/files/Gaming\ pic\ background.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5b5d6e; 
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 1;
+}
+
+#home h1 {
+  font-size: 4em;
+}
+
+/* About Section */
+#about {
+  padding: 40px;
+  text-align: center;
+  color:#5b5d6e;
+}
+.about-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.about-text {
+  width: 60%;
+  text-align: left; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-image {
+  margin-top: 20px;
+}
+
+#github-profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  box-shadow:0 0 20px var(--color-1); 
+}
+
+#github-bio a {
+  color: 0 0 20px var(--color-1);
+  text-decoration: none;
+}
+
+#github-bio a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 20px;
+  text-align: center;
+  color: #5b5d6e;
+}
+
+#projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+.project-list a {
+  display: inline-block;
+  color: var(--color-1);
+  font-size: 1.5em;
+  margin: 15px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-list a:hover {
+  color: var(--color-4); 
+  text-shadow: 0 0 20px var(--color-4); 
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  color: #5b5d6e;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  border: 2px solid var(--color-4); 
+  border-radius: 5px;
+  background: #FFFF;
+  color: var(--color-4); 
+}
+
+button {
+  padding: 12px 25px;
+  background: var(--color-1);
+  color: var(--color-4); 
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d1b0da;
+
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar .nav-links li {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .navbar .hamburger {
+      display: flex;
+  }
+
+  .navbar .nav-links.show {
+      display: flex;
+  }
+
+  #home h1 {
+      font-size: 2.5em;
+  }
+
+  #about, #projects, #contact {
+      padding: 40px 20px;
+  }
+
+  #github-profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+}
+
+/* Resume Section */
+#resume {
+  padding: 50px 20px;
+  text-align: center;
+  color: #5b5d6e;
+}
+
+/* Container for resume content */
+.resume-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background: #d7bdda;
+  border-radius: 10px;
+}
+
+/* Resume heading */
+#resume h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Resume content styling */
+.resume-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--color-4); 
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a55eac; 
+  background-color: #ffffff; 
+  border: 2px solid #000000; 
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #E0DED7; 
+  color: #222; 
+}
+
+
+/*techstack circles*/ 
+.tech-stack {
+  display: flex;
+  justify-content: center; 
+  gap: 15px; 
+  flex-wrap: wrap; 
+}
+
+.tech-item {
+  width: 120px;  
+  height: 120px; 
+  border-radius: 50%; 
+  background-color: #2e2c2c; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.tech-item.show {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.tech-item img {
+  width: 80%;  
+  height: 80%;  
+  object-fit: contain; 
+}
+
+#projects a{
+  font-size: 30px; 
+  font-weight: bold;
+  text-decoration: none;
+  color: #407076; 
+  transition: color 0.3s ease;
+}
+
+#projects a:hover {
+  color: #698996;
+  transform: scale(1.05); 
+}
